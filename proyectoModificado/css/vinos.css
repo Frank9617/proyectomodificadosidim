@@ -1,0 +1,503 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+/*Estilo del boton de busqueda*/
+.btn-search:hover {
+    border-color: aliceblue;
+        background-color: #770000;
+        color: azure
+
+
+}
+.btn-search {
+    background-color: #770000;
+    color: white;
+
+
+}
+ /*************************************/
+
+ /*Estilo del input de busqueda*/
+.form-control {
+    width: 70%;
+    border-radius: .25;
+
+
+}
+
+/*Estilos de la casa de inicio*/
+
+.custom-icon {
+    color: #ffffff;
+    width: 10%;
+    height: 10%;
+    margin-top: 0%;
+    margin-right: 13%;
+
+}
+
+.custom-icon:hover {
+    color: #ffffff;
+}
+
+/************************************************/
+
+.inicio-item {
+    list-style: none;
+    /* Oculta el indicador de submenú */
+}
+
+
+/*********************************************************************/
+
+/*Estilos del Menu*/
+.menu-bar {
+
+    background-color: #770000;
+    display: flex;
+    /* justify-content: center; */
+    width: 100rem;
+    height: 3rem;
+
+}
+
+.menu-bar a {
+    display: block;
+    text-decoration: none;
+}
+
+.menu-bar li {
+
+    position: relative;
+}
+
+.menu-bar li:hover ul {
+    display: block;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu-bar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-bar>ul.submenu>li>ul.subsumenu>li>a::after {
+    display: none;
+}
+
+.menu-bar>ul>li {
+    margin-top: 1%;
+}
+
+.menu-bar>ul>li>a:after {
+    content: " ▼";
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+/***************************************************************/
+
+
+
+/*Estilos del Submenu y subsumenu*/
+.submenu {
+    /* position:initial; */
+    z-index: 2;
+
+
+}
+
+.submenu a {
+    margin-top: -0.6em;
+}
+
+.submenu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 120%;
+    margin-bottom: 15%;
+    text-align: center;
+    padding: 5px;
+    opacity: 500%;
+    /* margin-left: 100px; */
+    margin-right: 50px;
+
+}
+
+.submenu>li {
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    margin: 0px;
+    right: 100px;
+
+
+
+
+}
+
+.submenu>li:hover>ul {
+    display: block;
+    text-align: center;
+
+}
+
+.submenu>li>a:after {
+    content: none;
+}
+
+.submenu>li>ul {
+    display: none;
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    border-radius: 3%;
+    background-color: #770000;
+    opacity: 0.86;
+    z-index: 2;
+    /* opacity: 0.85; */
+    width: 100%;
+
+    height: 15rem;
+
+}
+
+.submenu>li>ul>li {
+    display: block;
+}
+
+.subsumenu li {
+    margin-top: 15%;
+}
+
+.subsumenu li:hover {
+    background-color: #9b9797;
+    border-radius: 8px;
+
+
+}
+
+.subsumenu>li>a {
+    color: white;
+    margin-right: 70%;
+}
+/**************************************************************/
+
+
+
+
+
+
+/************************************************************/
+/*Estilos de la paginacion*/
+.page-link{
+    color: #770000;
+    border: none;
+    
+    
+    
+    
+}
+
+.page-link:hover{
+    color: gray;
+    outline: none;
+    border: none;
+}
+.pagination:hover{
+    color: gray;
+    border: none;
+    
+
+}
+
+
+  .pagination .page-link:focus {
+    box-shadow: none;
+    outline: none;
+  }
+ /**********************************************************************************/
+
+
+/*Estilos de las cards*/
+.card .btn-add {
+    color: white;
+    background-color: #770000;
+    border: #ffffff;
+    width: 90%;
+    /* Ajusta el ancho del botón según tu preferencia */
+    height: 15%;
+    /* Ajusta la altura del botón según tu preferencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 5%;
+    border-radius: 5px;
+
+}
+.card {
+
+    margin-left: 50%;
+    width: 70%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    margin-top: 10px;
+
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    margin-top: 20px;
+
+
+
+}
+
+.card-footer .btn {
+    color: #770000;
+    background-color: gray;
+    border: #9b9797;
+    width: 15%;
+    /* Ajusta el ancho del botón según tu preferencia */
+    height: 1.5rem;
+    /* Ajusta la altura del botón según tu preferencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -1px;
+    border-radius: 5px;
+}
+
+.btn-add:hover {
+
+    background-color: rgb(179, 1, 1);
+
+
+}
+
+.card-img-top {
+    transition: transform 0.3s;
+    /* Agrega una transición suave */
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+    /* Agranda la imagen en un 10% */
+}
+
+.card-text {
+
+    font-size: 1 rem;
+    margin-left: 1%;
+}
+
+.card-title {
+    color: #770000;
+    margin: 10px;
+    font-size: 1.3rem;
+    margin-left: 1%;
+
+}
+
+.card-size {
+    margin-left: 1%;
+    margin-top: -10px;
+}
+ /*************************************/
+
+
+
+/*Estilos del acordeon de filtros*/
+.container1{
+    position: absolute; /* Asegura que el contenedor del acordeón tenga una posición */
+    z-index: 1;
+    top: 20%;
+    left: 30px;
+    
+    /* Ajusta el valor del z-index según sea necesario */
+    background-color: #fff;
+    padding: 50px;
+  
+  }
+
+  .accordion-button{
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+     
+    
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+    
+  }
+  
+  .accordion-item{
+    width: 320px;
+    z-index: 1;
+    position:relative;
+    
+    
+  }
+   /*************************************/
+
+
+
+
+   /*Estilos del Suscribe*/
+   .btn-suscribe:hover {
+    background-color: #770000;
+    color: white;
+    border-color: aliceblue;
+
+
+}
+
+  .form-check-input[type="checkbox"] {
+    /* Establece el color del borde cuando el checkbox está seleccionado */
+    border-color:#770000;
+    /* Quita el sombreado azul alrededor del borde */
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .form-check-input[type="checkbox"]:checked {
+    /* Establece el color de fondo del checkbox cuando está seleccionado */
+    background-color: #770000;
+  }
+
+  .suscribe {
+        
+    background-image: url('/proyectoModificado/imagenes/banner/depositphotos_318844098-stock-photo-wine-corks-on-blurred-background.jpg');
+    /* Cambia 'ruta-de-la-imagen.jpg' por la ruta real de tu imagen */
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+    padding: 2rem;
+    /* Añade un poco de espacio alrededor del contenido */
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: 10rem;
+    }
+
+
+/* Cambiar el estilo del checkbox en estado hover */
+.form-check-input:hover {
+    border-color: #ffffff;
+    /* Cambia el color del borde en estado hover */
+    box-shadow: none;
+}
+.btn-suscribe {
+    margin-left: -3rem;
+    background-color: #770000;
+    color: azure;
+
+}
+
+ /*******************************************************************************************/
+
+
+/*Estilos del footer*/
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+.footer-bottom {
+
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin-top: 2rem;
+}
+
+.footer-column {
+    width: 77%;
+
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-top: 5%;
+    margin-right: 90%;
+
+
+}
+
+.footer-column p {
+    margin-bottom: 2%;
+
+}
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-right: 1%;
+    margin-top: 50px;
+
+
+}
+.social-media-icons {
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+
+}
+
+.social-media-icons li {
+    margin-right: 10px;
+}
+
+h5 {
+    font-size: 16px;
+    margin-top: 60%;
+    margin-left: -350%;
+
+}
